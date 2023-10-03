@@ -12,10 +12,21 @@ html {
     box-sizing: inherit;
   }
 
+/* ---------- Utality Style ---------- */
+
+.container{
+    width:80vw;
+    margin:40px auto;
+
+}
+
+
+
+
 /* ---------- Global Style ---------- */
 
 body{
-    background:#E1CDB5;
+    background:#93958E;
     font-family: 'Rubik', sans-serif;
     margin:0;
 }
@@ -23,7 +34,7 @@ body{
 header.primary{
    
     background-color:#212922;
-    color:#ffff;
+    color:#6F706C;
     text-align:center;
     padding:40px;
     /* long form for padding */
@@ -46,7 +57,7 @@ header.primary h1 {
 }
   
 header.primary h1 a{
-    color:white;
+    color:#EAE6E4;
     text-decoration: none;
 }
 
@@ -79,6 +90,68 @@ header.primary nav a{
     background-color: rgba(0, 0, 0, .4);
     padding: 8px 16px;
     border-radius: 20px;
+    transition: 0.5s;
+}
+header.primary nav a: hover, 
+header.primary nav a: active{
+    background-color: rgba(0, 0, 0, .8);
+}
 
+#intro{
+    border-bottom: 1px solid #000000;
+    padding-bottom:20px;
+}
+
+#intro h2{
+    color:#EAE6E4;
+}
+ #content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+ }
+
+ #content article.post{
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    padding:10px;
+    font-size:.8rem;
+    transition:.5s;
+  }
+
+  #content article.post:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+  }
+
+articl.post figure{
+    margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- Respnosive image ---------- */
+img{
+    max-width: 100%;
+}
+
+/* ---------- Media Queries ---------- */
+@media screen and (max-width:600px){
+    header.primary nav ul{
+    flex-direction: column;   
+    max-width: width 250px;
+    margin:auto; 
+    gap: 10px;
+}
+header.primary nav ul a{
+    display:block;
+}
 
 }
