@@ -98,7 +98,7 @@ header.primary nav a: active{
 }
 
 #intro{
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #212922;
     padding-bottom:20px;
 }
 
@@ -110,6 +110,9 @@ header.primary nav a: active{
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+    border-bottom: 1px solid #212922;
+    padding-bottom:20px;
+    padding-bottom: 3rem;
  }
 
  #content article.post{
@@ -126,6 +129,67 @@ header.primary nav a: active{
 articl.post figure{
     margin:0;
 }
+
+time.post-date, figcaption, .post-meta{
+    text-transform: uppercase;
+    color:#EAE6E4 ;
+}
+ article.post img{
+    border:solid 1px #EAE6E4;
+    padding: 2.5px;
+    border-radius: 5px;
+ }
+ article.post a{
+    color: #212922;
+    transition: 5s;
+ }
+
+ article.post a: hover{
+    text decoration: none;
+}
+
+ aside[role="complementary"]{
+    background-color: #212922;
+    color:#fff;
+    padding:40px;
+ }
+
+aside div.container{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+aside .container p{
+    line-height: 1;
+}
+
+aside .container a:last-of-type{
+    color:#EAE6E4;
+    display: block;
+    text-align-last: right;
+    margin-top: 20px;
+}
+
+#colophon{
+    background: #EAE6E4;
+}
+
+#colophon h6{
+    padding: 20px;
+    margin:0;
+    text-align: center;
+    color: #212922;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -152,6 +216,17 @@ img{
 }
 header.primary nav ul a{
     display:block;
+}
+#content{
+    flex-direction: column;
+}
+
+#content img{
+    display:block;
+    margin:20px auto;
+}
+aside .container{
+    flex-direction: column;
 }
 
 }
