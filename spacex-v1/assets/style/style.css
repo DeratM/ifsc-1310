@@ -5,18 +5,20 @@
   }
   body{
     background-color: #E5E5E5;
+    margin:0;
   }
  
 /* ------ Header Style ------ */
 
 header.primary{
-    background-image: url("../img/Dragon_2_hover.png");
+    background-image: url("../img/dragon-hover-header.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 0;
     height:353px;
-    width: 1897px;
+    width: 100vw;
+    padding:10px;
 }
 
 
@@ -40,9 +42,7 @@ header h2{
     justify-content: center;
     font-size: 75px;
     color: white;
-    background-color: black;
-    margin: 0px 775px;
-    border-radius: 1rem 2rem 3rem 4rem;
+    
 }
 
 
@@ -70,7 +70,6 @@ img{
 section {
      background-color: #E5E5E5;
     padding: 20px 0;
-    margin:0;
     color: #E5E5E5;
     border-top: 3px solid #FCA311;
    }
@@ -94,39 +93,41 @@ section#content p{
 
 /* ------ Article Style ------ */
 
-article#post{
+article.post{
     background-color: #14213D;
     margin: 10px;
     padding: 10px;
     display:inline-flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 36rem;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: auto;
    
   }
+
 
   section#articles h2{
     text-align: center;
     background-color: #14213D;
     padding:20px;
-    margin: none;
+    margin: 20px;
     border-radius: 100px;
   }
   
-  article.post figure{
+  #post figure{
     grid-area: figure;
     margin:0;
   }
   
-  article.post header{
+ #post header{
     grid-area: header;
   }
   
-  article.post .post-content{
+  #post .post-content{
     grid-area: post-content;
   }
   
-  article.post meta{
+  #post meta{
     grid-area: footer;
   }
   
@@ -144,16 +145,21 @@ article#post{
     border-top: 1px solid black;
     background-color:  #14213D;
     width:50%;
+    border-style: inset;
+    border-color: #FCA311;
+    border-width: 5px;
+    
 }
 
 details summary {
    width: 200%;
    padding: 20px 0;
    cursor: pointer;
+   justify-content: center;
+   
   }
 
   details summary:after {
-    content: "+";
     color: black;
     position: absolute;
     font-size: 1.75rem;
@@ -163,9 +169,19 @@ details summary {
     font-weight: 200;
     transform-origin: center;
     transition: 200ms linear;
+    border-style: outset;
+    border-color: #FCA311;
+    border-width: 5px;
+    
+    
   }
 
-
+#history-and-overview{
+  display:flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap:20px;
+}
 
 
 /* ------ Footer Style ------ */
