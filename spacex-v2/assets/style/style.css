@@ -119,15 +119,33 @@ th, td{
 article.post{
     background-color: #14213D;
     padding: 15px;
-    margin: 5px;
     margin-bottom: 20px;
     display:inline-flex;
     flex-direction: column;
+    
+}
+
+  #box-1{
     width: 33rem;
     height: 36rem;
-    float:left
+    float:left;
+    margin: 0 2.3rem;
   }
 
+
+  #box-2{
+    clear:both;
+    width: 33rem;
+    height: 36rem;
+    margin: 0 2.4rem;
+  }
+
+  #box-3{
+    width: 33rem;
+    height: 36rem;
+    float:right;
+    margin: 0 2.4rem;
+  }
 
 
   section#articles h2{
