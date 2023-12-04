@@ -118,33 +118,41 @@ th, td{
 
 article.post{
     background-color: #14213D;
-    padding: 15px;
-    margin-bottom: 20px;
-    display:inline-flex;
-    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    display:flex;
+    flex-flow:row wrap;
     
 }
 
   #box-1{
-    width: 33rem;
+    width: 30rem;
     height: 36rem;
     float:left;
-    margin: 0 2.3rem;
+    margin: 1rem 1.5rem;
+
+    flex-grow:1;
   }
 
 
   #box-2{
     clear:both;
-    width: 33rem;
+    display: inline-block;
+    width: 30rem;
     height: 36rem;
-    margin: 0 2.4rem;
+    margin: 1rem 1.5rem;
+
+    flex-grow:1;
+
   }
 
   #box-3{
-    width: 33rem;
+    width: 30rem;
     height: 36rem;
     float:right;
-    margin: 0 2.4rem;
+    margin: 1rem 1.5rem;
+
+    flex-grow:1;
   }
 
 
